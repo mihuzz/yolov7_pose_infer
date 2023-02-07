@@ -36,8 +36,15 @@ Use script to modify onnx model use netron to see digits of nodes:
 ```
 ../YoloLayer_TRT_v7.0/add_custom_yolo_op.py
 ```
-
->Convert onnx to trt:  
+Build yolo layer tensorrt plugin  
 ```
+cd {this repo}/YoloLayer_TRT_v7.0  
+mkdir build && cd build  
+cmake .. && make  
+```
+>Convert onnx to trt engine:  
+```
+cd {this repo}/
+
 >/usr/local/TensorRT-8.2.5.1/bin/trtexec --onnx=/way/to/your/yolov7-w6-pose-sim-yolo.onnx --saveEngine=/path/to/save/yolov7-w6-pose-sim-yolo-fp16.engine --plugins=/path/where/is/libyolo.so    
 ```
