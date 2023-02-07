@@ -32,7 +32,10 @@ img = torch.randn(1, 3, 960, 960).to(device)  # image size(1,3,320,192) iDetecti
 torch.onnx.export(model, img, './weights/yolov7-w6-pose.onnx', verbose=False, opset_version=12, input_names=['images'])
 
 ```
-Modify onnx model use netron to see digits of nodes:  
+Modify onnx model use netron to see digits of nodes use script:  
+```
+../YoloLayer_TRT_v7.0/add_custom_yolo_op.py
+```
 
 ```python
 import onnx_graphsurgeon as gs
