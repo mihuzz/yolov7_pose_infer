@@ -1,7 +1,7 @@
 # yolov7_pose_infer
-
+>Based on Yolov7 and https://github.com/nanmi/yolov7-pose 
 >Convert to onnx:  
->Based on Yolov7 and https://github.com/nanmi/yolov7-pose  
+ 
 ```python
 import sys
 sys.path.append('./')  # to run '$ python *.py' files in subdirectories
