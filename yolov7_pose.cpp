@@ -83,7 +83,7 @@ int main(int argc, char** argv) {
         return -1;
     }
 
-    std::string outfile = "/home/mih/Видео/yolov7pose.avi";
+    std::string outfile = "/path/to/save/yolov7pose.avi";
     cv::VideoWriter myvideo(outfile, cv::VideoWriter::fourcc('I','4','2','0'), 29, cv::Size(cap.get(cv::CAP_PROP_FRAME_WIDTH), cap.get(cv::CAP_PROP_FRAME_HEIGHT)));
 
     for(;;)
