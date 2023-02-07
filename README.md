@@ -1,7 +1,7 @@
 # yolov7_pose_infer
 >Based on Yolov7 and https://github.com/nanmi/yolov7-pose  
 ```python
-s = "from ultralytics import YOLO
+"from ultralytics import YOLO
 
 # Load a model
 # model = YOLO("yolov8n-seg.pt")  # load an official model
@@ -9,7 +9,7 @@ model = YOLO("/home/mih/PycharmProjects/yomy8/venv/lib/python3.8/site-packages/u
 
 # Export the model
 model.export(format="engine")"
-print s
+
 ```
 
 
